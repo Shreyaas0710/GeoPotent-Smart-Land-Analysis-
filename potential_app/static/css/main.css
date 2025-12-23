@@ -1,0 +1,176 @@
+/* ======================================================
+   GeoPotent Premium Design System (FIXED TEXT VISIBILITY)
+   ====================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #0d3b2e;
+    --primary-light: #1a5c4a;
+    --accent-color: #ffd700;
+    --accent-hover: #e6c200;
+
+    --text-color: #f0fdf4;        /* global light text */
+    --text-muted: #c7f9e3;       /* readable muted text */
+    --text-dark: #0f172a;        /* readable dark text */
+
+    --bg-gradient: linear-gradient(135deg, #051d16 0%, #0d3b2e 100%);
+    --card-bg: rgba(255, 255, 255, 0.08);
+    --card-border: rgba(255, 255, 255, 0.15);
+
+    --glass-blur: blur(14px);
+
+    --radius-lg: 16px;
+    --radius-md: 8px;
+
+    --transition-fast: 0.2s ease;
+    --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background: var(--bg-gradient);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+/* ======================================================
+   TYPOGRAPHY FIXES
+   ====================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+}
+
+p, small, label {
+    color: var(--text-muted);
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.text-dark {
+    color: var(--text-dark) !important;
+}
+
+/* ======================================================
+   GLASS CARD FIXES
+   ====================================================== */
+
+.card,
+.glass-card {
+    background: var(--card-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    color: var(--text-color);
+}
+
+/* Force readable text inside cards */
+.card {
+    color: var(--text-dark);
+}
+
+.glass-card {
+    color: var(--text-dark);
+}
+
+.card p,
+.card span,
+.card td,
+.card th {
+    color: var(--text-dark);
+}
+
+
+/* Card headers */
+.card-header {
+    background: transparent;
+    border-bottom: 1px solid var(--card-border);
+}
+
+/* SUCCESS HEADER (Bond section) */
+.card-header.bg-success {
+    background: linear-gradient(135deg, #1a7f5a, #0d3b2e) !important;
+    color: #ffffff !important;
+}
+
+/* ======================================================
+   ALERTS & BADGES FIX
+   ====================================================== */
+
+.alert {
+    background: rgba(255, 255, 255, 0.92);
+    color: var(--text-dark);
+    border-radius: var(--radius-md);
+}
+
+.alert strong {
+    color: #065f46;
+}
+
+.badge,
+.text-success,
+.text-danger,
+.text-warning {
+    font-weight: 600;
+}
+
+/* ======================================================
+   BUTTON FIXES
+   ====================================================== */
+
+.btn-success {
+    background-color: #1a7f5a;
+    border-color: #1a7f5a;
+    color: #ffffff;
+}
+
+.btn-outline-success {
+    border-color: #1a7f5a;
+    color: #1a7f5a;
+}
+
+.btn-outline-success:hover {
+    background: #1a7f5a;
+    color: #ffffff;
+}
+
+/* ======================================================
+   FORMS (ALREADY CORRECT, JUST HARDENED)
+   ====================================================== */
+
+input, select, textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: var(--radius-md);
+    color: #051d16;
+    font-size: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #6b7280;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.3);
+}
+
+/* ======================================================
+   FOOTER
+   ====================================================== */
+
+footer {
+    color: var(--text-muted);
+    border-top: 1px solid var(--card-border);
+}
