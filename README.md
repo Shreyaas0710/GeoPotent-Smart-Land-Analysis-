@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=30&pause=1000&color=16A34A&center=true&vCenter=true&width=750&lines=🌍+GeoPotent;Smart+Land+Analysis+Platform;Solar+%C2%B7+Wind+%C2%B7+Soil+%C2%B7+Agri+Intelligence" alt="Typing SVG" />
+<h1>🌍 GeoPotent</h1>
+<h3>Smart Land Analysis Platform</h3>
+<p><em>Solar &nbsp;·&nbsp; Wind &nbsp;·&nbsp; Soil &nbsp;·&nbsp; Agri Intelligence</em></p>
 
 <br/>
 
